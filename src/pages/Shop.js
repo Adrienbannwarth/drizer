@@ -13,11 +13,11 @@ function Shop() {
   const fetchItems = async () => {
 
     const data = await fetch(
-      'https://reqres.in/api/users?page=2'
+      'https://api.deezer.com/user/2529/playlists'
     );
 
     const items = await data.json();
-    console.log(items.data);
+    console.log(data);
     setItems(items.data);
   };
 
